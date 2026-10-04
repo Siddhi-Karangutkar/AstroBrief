@@ -8,6 +8,8 @@ from collections import Counter
 from dotenv import load_dotenv
 
 load_dotenv()
+nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 HF_API_URL = "https://router.huggingface.co/hf-inference/models/sshleifer/distilbart-cnn-12-6"
