@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
 nltk.download('stopwords', quiet=True)
 
 HF_TOKEN = os.getenv("HF_TOKEN")
